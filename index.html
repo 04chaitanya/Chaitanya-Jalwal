@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="chaitanya Jalwal.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dracula/css/dracula.min.css">
+    <title>Portfolio - Chaitanya Jalwal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <xmp></Chaitanya Jalwal></xmp>
+            </h1>
+            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div id="about">
+                <h1>Chaitanya Jalwal</h1>
+                <h2>Aspiring Software Developer</h2>
+                <h3>Constantly learning and committed to self-improvement, I'm an aspiring software developer. <br> Let's create amazing user interface together !!.</h3>
+            </div>
+            <div id="code">
+                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+<span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+    let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+    element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    function writeSymbols() {
+        element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+        if (element.count &lt;= element_array.length) {
+            setTimeout(() =&gt; {
+                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        } else if (element.count &gt;= element_array.length) {
+            element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+            writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        }
+    }
+    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+}</pre></span>
+            </div>
+        </section>
+
+        <section id="history">
+            <img src="./img/Logo.png" alt="Rectangle">
+            <h1>I am an aspiring software developer. I have a knack for problem solving and I am experienced in Java as well as in front-end development. </h1>
+        </section>
+        <section id="skills">
+            <h1 class="title">My Skills</h1>
+            <div id="skill-cards">
+                <div class="card">
+                    <img src="./img/icon html.png" alt="HTML5" class="normal">
+                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon css.png" alt="CSS3" class="normal">
+                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon js.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/icon js -- hover.png" alt="JAVASCRIPT" class="hover">
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon git.png" alt="GIT" class="normal">
+                    <img src="./img/icon git -- hover.png" alt="GIT" class="hover">
+                    <h1>Git</h1>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div id="sites">
+                <div id="shopify" allowfullscreen>
+                    <h1>Omni Food - Online Food Platform</h1>
+                    <iframe src="https://04chaitanya.github.io/OmniFood/" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">Full Screen</button>
+                        <a href="https://04chaitanya.github.io/OmniFood/" target="_blank"><button>Website Link</button></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="https://github.com/04chaitanya" target="_blank"><button class="mais">View More</button></a>
+        </section>
+    </main>
+    <footer>
+        <div id="msg">
+            <h1><xmp></Chaitanya Jalwal></xmp></h1>
+            <h2>I am open for internship roles in software development.</h2>
+        </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <ul>
+                <li><img src="./img/gmail.png" alt="gmail"> <a href="cj.jalwal@gmail.com"
+                        target="_blank">cj.jalwal@gmail.com</a></li>
+                <li><img src="./img/github.png" alt="github"> <a href="https://github.com/04chaitanya"
+                        target="_blank">04chaitanya</a></li>
+                <li><img src="./img/linkedin.png" alt="linkedin"><a
+                        href="https://www.linkedin.com/in/chaitanya-jalwal/" target="_blank">Chaitanya Jalwal</a></li>
+            </ul>
+        </div>
+    </footer>
+<script>
+let menuButton = document.querySelector("#menu");
+let menu = document.querySelector(".menu");
+
+menuButton.addEventListener("click", function () {
+    menu.classList.toggle("open");
+});
+
+const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
+const iframes = document.querySelectorAll('iframe');
+
+botoesTelaCheia.forEach((botao, index) => {
+  botao.addEventListener('click', () => {
+    iframes[index].requestFullscreen();
+  });
+});
+</script>
+</body>
+
+</html>
